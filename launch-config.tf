@@ -7,7 +7,7 @@ resource "aws_launch_configuration" "default" {
     root_block_device {
       volume_type = "standard"
       volume_size = 30
-      delete_on_termination = true
+      delete_on_termination = false
     }
 
     lifecycle {
