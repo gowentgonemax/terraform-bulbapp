@@ -19,6 +19,6 @@ resource "aws_launch_configuration" "default" {
     key_name                    = "terraform-ecs-bulbapp"
     user_data                   = <<EOF
                                   #!/bin/bash
-                                  echo ECS_CLUSTER=docker-helloapp >> /etc/ecs/ecs.config
+                                  echo ECS_CLUSTER=docker-bulbapp >> /etc/ecs/ecs.config
                                   EOF
 }
